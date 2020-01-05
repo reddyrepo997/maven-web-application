@@ -1,0 +1,23 @@
+def workspace
+node
+{
+  
+      stage('checkout')
+    {
+        git 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+        workspace=pwd()
+    }
+    
+    stage('Build')
+    {
+        echo "Building the job"
+    }
+    stage('test')
+    {
+        echo "Testing the job"
+    }
+    stage('Deploy')
+    {
+        echo "Deployimg the code"
+    }
+}  
