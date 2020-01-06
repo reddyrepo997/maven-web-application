@@ -1,0 +1,19 @@
+node
+{
+    stage('code check out')
+    {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git']]])
+    }
+    stage('build')
+    {
+        echo "Build the job"
+    }
+    stage('checking the job')
+    {
+        echo "Testing the job"
+    }
+    stage('deploying the war file')
+    {
+        echo "Deploying the package"
+    }
+}
