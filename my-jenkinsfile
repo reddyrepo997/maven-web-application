@@ -4,7 +4,7 @@ node
   
       stage('checkout')
     {
-        git 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/reddyrepo997/maven-web-application.git']]])
         workspace=pwd()
     }
     
