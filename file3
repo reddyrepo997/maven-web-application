@@ -7,4 +7,9 @@ Adding new line for testing purpose
 Check once again
 =======
 We are not able to see master branch update here
+<<<<<<< HEAD
+>>>>>>> patch-4
+=======
+
+Reddy is a greate man
 >>>>>>> patch-4
