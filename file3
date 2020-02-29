@@ -3,4 +3,8 @@ As this for new development
 
 Adding new line for testing purpose
 
+<<<<<<< HEAD
 Check once again
+=======
+We are not able to see master branch update here
+>>>>>>> patch-4
